@@ -18,6 +18,7 @@ export class Tama {
     this.name = "tama"
 
     this.displayEl = displayEl
+    this.ctx = displayEl.getContext("2d")
 
     this.stage = stagesEnum[0].id
     this.stageIndex = 0
@@ -78,7 +79,20 @@ export class Tama {
   }
 
   egg() {
-    this.displayEl.textContent = "egg animation"
+    // this.displayEl.textContent = "egg animation"
+    let flag = false
+    setInterval(() => {
+      if (flag) {
+        this.ctx.clearRect(0, 0, this.displayEl.width, this.displayEl.height)
+        this.ctx.beginPath()
+        this.ctx.fillRect(32, 32, 32, 32)
+      } else {
+        this.ctx.clearRect(0, 0, this.displayEl.width, this.displayEl.height)
+        this.ctx.beginPath()
+        this.ctx.fillRect(64, 64, 32, 32)
+      }
+      flag = !flag
+    }, 500);
 
     setTimeout(() => {
       this.hatch()
