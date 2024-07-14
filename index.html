@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Tama</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div id="tama-cont">
+    <div id="tama-inner-cont">
+      <div id="tama-screen">
+        <div class="menu" id="upper-menu">
+          <span class="menu-icon" id="feed">🍴</span>
+          <span class="menu-icon" id="light">💡</span>
+          <span class="menu-icon" id="play">🏓</span>
+          <span class="menu-icon" id="heal">💉</span>
+        </div>
+        <!-- <div id="tama-display">screen off</div> -->
+        <canvas id="tama-display"></canvas>
+        <div class="menu" id="lower-menu">
+          <span class="menu-icon" id="clean">🚽</span>
+          <span class="menu-icon" id="stats">⚖️</span>
+          <span class="menu-icon" id="discipline">🤬</span>
+          <span class="menu-icon" id="needs">⚠️</span>
+        </div>
+      </div>
+      <div id="button-cont">
+        <button id="toggle"></button>
+        <button id="select"></button>
+        <button id="cancel"></button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

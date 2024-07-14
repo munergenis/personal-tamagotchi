@@ -1,0 +1,100 @@
+:root {
+  --screen-height: 64px;
+  --screen-width: calc(var(--screen-height) * 2);
+  --cont-width: calc(var(--screen-width) * 2);
+  --cont-height: calc((var(--screen-width) + var(--screen-height)) * 1.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #334;
+  color: whitesmoke;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Courier, monospace
+}
+
+#tama-cont {
+  height: var(--cont-height);
+  width: var(--cont-width);
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+#tama-screen {
+  margin-top: 25px;
+  height: var(--screen-width);
+  width: var(--screen-width);
+  border: 2px solid white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  margin: 5px 0;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#upper-menu {
+  border-bottom: 1px solid white;
+}
+
+#lower-menu {
+  border-top: 1px solid white;
+}
+
+.menu-icon {
+  color: transparent;
+}
+
+#tama-display {
+  width: var(--screen-width);
+  height: var(--screen-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+#button-cont {
+  margin-top: 10px;
+  height: 42px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+
+button#select {
+  align-self: end;
+}
