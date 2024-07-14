@@ -1,5 +1,5 @@
 :root {
-  --screen-height: 64px;
+  --screen-height: 80px;
   --screen-width: calc(var(--screen-height) * 2);
   --cont-width: calc(var(--screen-width) * 2);
   --cont-height: calc((var(--screen-width) + var(--screen-height)) * 1.6);
